@@ -3,7 +3,7 @@ import os
 class Print:
     def clear(self):
         clear = clear = lambda: os.system('cls')
-        input("pokracujte libovolnou klavesnici ...")
+        input("pokracujte klavesnici enter ...")
         clear()
 
 

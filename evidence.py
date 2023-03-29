@@ -9,6 +9,19 @@ class Evidence:
         prijmeni = input(' vlozte prijmeni: ')
         telefon = input(' vlozte telefon: ')
         vek = input(' vlozte vek: ')
+        try:
+            telefon = int(telefon)
+        except ValueError:
+            print("")
+            print("Telefon neobsahuje pouze cislo!")
+        
+        try:
+            vek = int(vek)
+        except ValueError:
+            print("")
+            print("Vek neobsahuje pouze cislo!")
+  
+
         self.pojistenci.append(Pojistenec(jmeno,prijmeni,telefon,vek))
         print("")
         print("Uzivatel pridan")
