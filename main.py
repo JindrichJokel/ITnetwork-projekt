@@ -1,28 +1,35 @@
 from evidence import Evidence
+from print import Print
 
-print('______________________')
-print('Evidence pojistencu')
-print('______________________')
 pojistenci = []
-
 evidence = Evidence()
+printer = Print()
 while True:
-   
-    klavesa = int(input('vyber cislo '))
     
-    if klavesa == 2:
-        evidence.hledej()
+    printer.vypis()
+    klavesa = int(input(''))
 
-    if klavesa==5:
-        evidence.vypis()
-        
-
-        
     if klavesa == 1:
         evidence.pridat()
-        
+        printer.clear()
+    if klavesa == 2:
+        evidence.vypis()
+        printer.clear()
 
-print("konec smicky")
+    if klavesa == 3:
+        evidence.hledej()
+        printer.clear()
+          
+    if klavesa == 4:
+        evidence.smazat()
+        printer.clear()
+
+
+    if klavesa == 5:
+        evidence.konec()
+        break
+
+        
 
 
 

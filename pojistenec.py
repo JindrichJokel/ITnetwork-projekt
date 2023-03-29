@@ -5,4 +5,4 @@ class Pojistenec:
         self.telefon = telefon
         self.vek = vek
     def __str__(self):
-        return f'Jmeno {self.jmeno}, prijmeni {self.prijmeni}, telefon {self.telefon}, vek {self.vek}'
+        return f'Jmeno: {self.jmeno}, prijmeni: {self.prijmeni}, telefon: {self.telefon}, vek: {self.vek}'
